@@ -1,10 +1,16 @@
 # CovaBell
 
-We have developed CovaBell, a smart doorbell and lock system to ensure visitors don’t show any Covid-19 symptoms.
-During the Covid-19 pandemic, security guards and other people are deployed outside apartments, offices, and shops to check the temperature of people entering an area. This process is risky and might lead to the spread of infection from the guard to the person or vice-versa. Moreover, when people visit a house, they ring a bell. If a person is Covid-19 positive, the bell will get infected with the virus.
+We've introduced CovaBell, an innovative smart doorbell and lock system that aims to ensure visitors are not exhibiting any symptoms of Covid-19.
 
-This project automates the checking of the temperature of people and allows them entry in areas such as shops, houses, offices, etc. It is a system comprising of an infrared sensor (which measures the temperature) and an oximeter, which evaluates the oxygen level in the body. We will take the vitals of the person and display it on an LCD screen whether the person can enter or not based on the result. A custom lock will be installed on the door to achieve this. If the health of the person based on the above factors is satisfactory, the system will open the door with the help of a servo motor.
 
-It’s a contact-less way to measure the temperature of people; we remove the need for a human to do the same job. It helps to prevent symptomatic people from entering an area. 
+During the Covid-19 pandemic, we've seen security guards and others stationed outside apartments, offices, and shops to manually check people's temperatures upon entry. However, this process carries risks, potentially facilitating the transmission of the virus between the guard and the person being checked. Additionally, when visitors ring the doorbell of a house, there's a concern that the bell itself could become contaminated if the visitor is Covid-19 positive.
+
+
+Our project automates the temperature screening process, allowing entry into various spaces such as shops, homes, and offices in a safer manner. It consists of an infrared sensor for temperature measurement and an oximeter to assess oxygen levels in the body. We collect the individual's vital data and display it on an LCD screen, determining whether they can enter based on the results. To facilitate entry, we install a customized lock on the door, which, if the person's health parameters are satisfactory, opens the door with the assistance of a servo motor.
+
+
+This system offers a contactless approach to temperature screening, eliminating the need for human intervention. It plays a crucial role in preventing individuals with symptoms from entering a given area.
+
+
 
 Video - https://www.loom.com/share/afc043c135134ca9b5e62225c9e75301
