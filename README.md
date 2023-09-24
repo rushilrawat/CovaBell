@@ -11,6 +11,8 @@ Our project automates the temperature screening process, allowing entry into var
 
 This system offers a contactless approach to temperature screening, eliminating the need for human intervention. It plays a crucial role in preventing individuals with symptoms from entering a given area.
 
-
+Contributors: 
+- Rushil Rawat: https://github.com/RushilRawat/
+- Arnav Bansal: https://github.com/ArnavBansal11/
 
 Video - https://www.loom.com/share/afc043c135134ca9b5e62225c9e75301
