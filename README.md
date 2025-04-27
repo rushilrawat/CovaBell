@@ -1,18 +1,66 @@
-# CovaBell
+# CovaBell - Smart Contactless Doorbell and Lock System 🚪📈
 
-We've introduced CovaBell, an innovative smart doorbell and lock system that aims to ensure visitors are not exhibiting any symptoms of Covid-19.
+CovaBell is an innovative project designed to provide a safer, contactless way of admitting visitors by screening their health vitals such as body temperature (and optionally oxygen level and pulse). Developed during the COVID-19 pandemic, it automates safety checks and physical access control using Arduino, sensors, and servo motors.
 
+---
 
-During the Covid-19 pandemic, we've seen security guards and others stationed outside apartments, offices, and shops to manually check people's temperatures upon entry. However, this process carries risks, potentially facilitating the transmission of the virus between the guard and the person being checked. Additionally, when visitors ring the doorbell of a house, there's a concern that the bell itself could become contaminated if the visitor is Covid-19 positive.
+## 📋 Features
+- Contactless temperature scanning using an infrared sensor.
+- Automatic door unlocking with servo motors upon passing health check.
+- Retry mechanism if abnormal temperature detected (max 3 retries).
+- Timeout reset after visitor inactivity.
+- Idle display when system is not in use.
+- Buzz alert on access grant.
+- Modular code design for easy expansion.
 
+---
 
-Our project automates the temperature screening process, allowing entry into various spaces such as shops, homes, and offices in a safer manner. It consists of an infrared sensor for temperature measurement and an oximeter to assess oxygen levels in the body. We collect the individual's vital data and display it on an LCD screen, determining whether they can enter based on the results. To facilitate entry, we install a customized lock on the door, which, if the person's health parameters are satisfactory, opens the door with the assistance of a servo motor.
+## 🛠️ Hardware Used
+- Arduino UNO
+- Ultrasonic Sensor (HC-SR04)
+- IR Temperature Sensor (Analog)
+- LCD Display 16x2 with I2C
+- Servo Motors x 2
+- Buzzer
+- Optional Add-ons:
+  - MAX30100 Pulse Oximeter Sensor
+  - Heartbeat Sensor Module
+  - Temperature Shield
 
+---
 
-This system offers a contactless approach to temperature screening, eliminating the need for human intervention. It plays a crucial role in preventing individuals with symptoms from entering a given area.
+## 🚀 Setup Instructions
+1. Wire up all components according to the provided schematic.
+2. Upload the `CovaBell.ino` code onto your Arduino.
+3. Power the Arduino board (5V recommended).
+4. Observe LCD messages and interact with the system.
 
-Contributors: 
-- Rushil Rawat: https://github.com/RushilRawat/
-- Arnav Bansal: https://github.com/ArnavBansal11/
+---
 
-Video - https://www.loom.com/share/afc043c135134ca9b5e62225c9e75301
+## 📈 How it Works
+- Visitor approaches ➔ Ultrasonic sensor detects.
+- Visitor's forehead is scanned ➔ Temperature is measured.
+- If within safe range:
+  - Door unlocks for 5 seconds.
+  - Welcome buzzer is activated.
+- If temperature is high:
+  - Retry opportunity provided up to 3 attempts.
+  - Else access denied.
+
+---
+
+## 🔮 Future Enhancements
+- Integrate cloud notification (via WiFi module ESP8266).
+- Add facial mask detection using basic camera modules.
+- Track visitor logs for auditing.
+
+---
+
+## 👥 Contributors
+- [Rushil Rawat](https://github.com/RushilRawat)
+- [Arnav Bansal](https://github.com/ArnavBansal11)
+
+---
+
+## 📜 License
+This project is licensed under the MIT License - see the LICENSE file for details.
